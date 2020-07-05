@@ -8,7 +8,7 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
-public interface ApiUser {
+public interface ApiUser { 
     @FormUrlEncoded
     @POST("api/CheckUser")
     Call<ResponseUser1s> login(@Field("email") String tk, @Field("password") String mk);
