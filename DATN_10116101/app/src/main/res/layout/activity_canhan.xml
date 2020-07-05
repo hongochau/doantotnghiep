@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".Fragment.CaNhan.CaNhanActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="75dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="25dp"
+                        android:paddingTop="10dp"
+                        android:textStyle="italic"
+                        android:text="HnH Electronics Store"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <TextView
+                        android:id="@+id/textview_dangnhap_dangky"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:textSize="23dp"
+                        android:textColor="@color/colorRed"
+                        android:text="Đăng Nhập / Đăng ký" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="140dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Dòng 1-->
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_thongtincanhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/ic_avatar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thông tin cá nhân"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#5E5E5E"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="14dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+                    </RelativeLayout>
+
+                    <!--Dòng 1-->
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_quanlydonhang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/ic_assignment_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quản lý đơn hàng"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#5E5E5E"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="14dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+                    </RelativeLayout>
+
+                    <!--Dòng 3-->
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_quanlysanphamdaxem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/ic_visibility_black1_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm đã xem"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#5E5E5E"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="14dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+                    </RelativeLayout>
+
+                    <!--Dòng 5-->
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_quanlysanphamdanhgia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="10dp"
+                            app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm đã đánh giá"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#5E5E5E"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="14dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+                    </RelativeLayout>
+
+                    <!--Dòng 2-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/ic_local_grocery_store_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm đã mua"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#5E5E5E"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="14dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+                    </RelativeLayout>
+
+
+                    <!--Dòng 4-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/ic_favorite_border_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm yêu thích"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#5E5E5E"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="14dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+                    </RelativeLayout>
+
+
+
+                    <!--Dòng 7-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/ic_settings_black_24dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cài đặt"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="#5E5E5E"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="14dp"
+                            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+                    </RelativeLayout>
+
+                    <!--Dòng 8-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp">
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="HOTLINE:"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:textColor="@color/colorRed"
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:text="0971004685" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="(Miễn phí)" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Cài đặt"
+                android:textColor="#5E5E5E"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

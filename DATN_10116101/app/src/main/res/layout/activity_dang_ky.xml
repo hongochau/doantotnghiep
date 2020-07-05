@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKy_DangNhap.DangKyActivity">
+
+
+    <include layout="@layout/content_dang_ky" />
+    <LinearLayout
+        android:id="@+id/text_dangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="29dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Tạo tài khoản ?"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView_b1_ketthuc_dangnhap"
+            android:text="Đăng nhập"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_b1_chuyentrang_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_quaylaidangky"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:adjustViewBounds="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center|start"
+            android:text="Đăng Ký"
+            android:textColor="@color/colorAccent"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start"
+            android:textColor="@color/colorGray"
+            android:text="Nhập địa chỉ email của bạn để tiếp tục"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp">
+
+            <EditText
+                android:id="@+id/editText_b1_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="true"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorGray" />
+
+            <ImageView
+                android:id="@+id/imageView_b1_email_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:adjustViewBounds="true"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_cancel_black_24dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_b1_email_tontaihaychua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ Email đã tồn tại. Xin vui lòng thử lại"
+            android:textColor="@color/colorRed"
+            android:layout_marginLeft="28dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

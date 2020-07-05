@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ProductDetailActivity">
+
+    <include
+        layout="@layout/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="114dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Sản Phẩm "
+                        android:fontFamily="@font/roboto_bolditalic"
+                        android:textColor="#1d1d1d"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/roboto_bolditalic"
+                            android:text="Giá: 1000000"
+                            android:textColor="@color/colorDarkWhite"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtvoucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:hint="Mã giảm giá (nếu có)"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/checkvoucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorxanhduong"
+                        android:text="Voucher"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@android:color/background_light" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtdescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:ellipsize="end"
+                        android:maxHeight="300dp"
+                        android:text="Sản Phẩm"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnchonmua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorxanhduong"
+                        android:text="Đặt mua sản phẩm"
+                        android:textColor="@android:color/background_light" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:ellipsize="end"
+                        android:maxHeight="300dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_marginLeft="7dp"
+                        android:text="Khách hàng nhận xét"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rclistfeedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/button_vietnhanxet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/border"
+                        android:text="Viết nhận xét/ Đánh giá"
+                        android:textColor="@android:color/holo_blue_dark" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorwhiteGray"
+    android:padding="25dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_shopping"
+        app:civ_border_width="2dp"
+        android:layout_gravity="left"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cửa hàng điện tử Electronics Store"
+        android:textColor="@color/colorAccent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

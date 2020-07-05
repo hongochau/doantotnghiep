@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#333639</color>
+    <color name="colorGray">#949394</color>
+    <color name="colorwhiteGray">#B6B6B6</color>
+    <color name="colorDarkWhite">#686266</color>
+    <color name="colorRed">#ed7653</color>
+    <color name="colorBlue">#DFFFBA</color>
+    <color name="colordo">#F31302</color>
+    <color name="colorxanhnuocbien">#5FA4C7</color>
+    <color name="colortim">#6200ee</color>
+    <color name="colorxanhduong">#40AFE1</color>
+    <color name="white">#ffffff</color>
+    <color name="cam">#ff424e</color>
+    --mau dung cho step view
+    <color name="maudo">#D81B60</color>
+    <color name="xanhtham">#008577</color>
+
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+
+</resources>

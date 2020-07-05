@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuToobar.TimKiemActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageview_thoat"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron" />
+
+        <TextView
+            android:id="@+id/textview_soluong"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#FF9800"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bolditalic"
+            android:text="Tìm kiếm" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview_sanpham"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/textview_trongtimkiem"
+        android:text="Không có sản phẩm nào phù hợp với thông tin tìm kiếm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" />
+
+
+
+</LinearLayout>
