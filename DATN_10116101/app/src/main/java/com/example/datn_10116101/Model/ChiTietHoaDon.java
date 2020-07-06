@@ -1,4 +1,4 @@
-package com.example.datn_10116101.Model;
+package com.example.datn_10116101.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

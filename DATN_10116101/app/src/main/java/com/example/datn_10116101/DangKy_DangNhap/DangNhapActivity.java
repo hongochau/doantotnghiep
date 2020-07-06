@@ -15,12 +15,12 @@ import android.widget.Toast;
 
 import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Activity.MainActivity;
+import com.example.datn_10116101.Admin.AdminActivity;
 import com.example.datn_10116101.BaseResponse.ResponseUser1s;
-import com.example.datn_10116101.Model.user1s;
+import com.example.datn_10116101.model.user1s;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.UserViewModel;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -28,7 +28,7 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-public class DangNhapActivity extends BaseActivity implements View.OnClickListener  {
+public class DangNhapActivity extends BaseActivity implements View.OnClickListener {
     private TextView textView_Quenmatkhau;
     private EditText editText_Email;
     private EditText editText_Password;
@@ -47,48 +47,53 @@ public class DangNhapActivity extends BaseActivity implements View.OnClickListen
         userViewModel = ViewModelProviders.of(DangNhapActivity.this).get(UserViewModel.class);
 
         textView_Quenmatkhau = findViewById(R.id.textView_quenmatkhau);
-        SpannableString spannableString = new SpannableString( "Quên mật khẩu ?" );
-        spannableString.setSpan( new UnderlineSpan(), 0, spannableString.length(), 0 );
-        textView_Quenmatkhau.setText( spannableString );
+        SpannableString spannableString = new SpannableString("Quên mật khẩu ?");
+        spannableString.setSpan(new UnderlineSpan(), 0, spannableString.length(), 0);
+        textView_Quenmatkhau.setText(spannableString);
 
-        editText_Email = findViewById( R.id.edittext_email );
-        editText_Password = findViewById( R.id.edittext_password );
-        checkBox_Nhomatkhau = findViewById( R.id.checkbox_nhomatkhau );
-        button_Dangnhap = findViewById( R.id.button_dangnhap );
-        textView_Dangky = findViewById( R.id.textview_dangky );
-        imageView_Anhienmatkhau = findViewById( R.id.imageview_anhienmatkhau );
-        imageView_Anhienmatkhau.setOnClickListener( this );
+        editText_Email = findViewById(R.id.edittext_email);
+        editText_Password = findViewById(R.id.edittext_password);
+        checkBox_Nhomatkhau = findViewById(R.id.checkbox_nhomatkhau);
+        button_Dangnhap = findViewById(R.id.button_dangnhap);
+        textView_Dangky = findViewById(R.id.textview_dangky);
+        imageView_Anhienmatkhau = findViewById(R.id.imageview_anhienmatkhau);
+        imageView_Anhienmatkhau.setOnClickListener(this);
 
-        editText_Password.setInputType( InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD );
-        imageView_Anhienmatkhau.setImageResource( images[1] );
-        textView_Dangky.setOnClickListener( this );
-        button_Dangnhap.setOnClickListener( this );
+        editText_Password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        imageView_Anhienmatkhau.setImageResource(images[1]);
+        textView_Dangky.setOnClickListener(this);
+        button_Dangnhap.setOnClickListener(this);
     }
+
     @Override
     public void onClick(View v) {
         if (v == imageView_Anhienmatkhau) {
             if (editText_Password.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
-                editText_Password.setInputType( InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD );
-                imageView_Anhienmatkhau.setImageResource( images[0] );
+                editText_Password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                imageView_Anhienmatkhau.setImageResource(images[0]);
             } else if (editText_Password.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD)) {
-                editText_Password.setInputType( InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD );
-                imageView_Anhienmatkhau.setImageResource( images[1] );
+                editText_Password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                imageView_Anhienmatkhau.setImageResource(images[1]);
             }
         } else if (v == textView_Dangky) {
-            startActivity( new Intent( DangNhapActivity.this, DangKyActivity.class ) );
+            startActivity(new Intent(DangNhapActivity.this, DangKyActivity.class));
         } else if (v == button_Dangnhap) {
             String Taikhoan = editText_Email.getText().toString().toLowerCase();
             String Matkhau = editText_Password.getText().toString();
             // call api đăng nhập
-            userViewModel.Login(Taikhoan,Matkhau).observe(DangNhapActivity.this, new Observer<ResponseUser1s>() {
+            userViewModel.Login(Taikhoan, Matkhau).observe(DangNhapActivity.this, new Observer<ResponseUser1s>() {
                 @Override
                 public void onChanged(ResponseUser1s responseUser1s) {
-                    if(responseUser1s.getStatus().equals("SUCCESS")){ // check status trả về
-                        user1s us=responseUser1s.getData();
-                        EventBus.getDefault().postSticky(us); // đưa dữ liệu vào Eventbus
-                        startActivity( new Intent( DangNhapActivity.this, MainActivity.class ) );
-                    }else{
-                        Toast.makeText(DangNhapActivity.this, ""+responseUser1s.getMess(), Toast.LENGTH_SHORT).show();
+                    if (responseUser1s.getStatus().equals("SUCCESS")) { // check status trả về
+                        if (responseUser1s.getData().getEmail().equals("admin@admin.com")) {
+                            startActivity(new Intent(DangNhapActivity.this, AdminActivity.class));
+                        } else {
+                            user1s us = responseUser1s.getData();
+                            EventBus.getDefault().postSticky(us); // đưa dữ liệu vào Eventbus
+                            startActivity(new Intent(DangNhapActivity.this, MainActivity.class));
+                        }
+                    } else {
+                        Toast.makeText(DangNhapActivity.this, "" + responseUser1s.getMess(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -98,8 +103,8 @@ public class DangNhapActivity extends BaseActivity implements View.OnClickListen
 
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void onMessageEvent(user1s event) { // get model test
-       editText_Email.setText(""+event.getEmail());
-       editText_Password.setText(""+event.getPassword());
+        editText_Email.setText("" + event.getEmail());
+        editText_Password.setText("" + event.getPassword());
     }
 }
 

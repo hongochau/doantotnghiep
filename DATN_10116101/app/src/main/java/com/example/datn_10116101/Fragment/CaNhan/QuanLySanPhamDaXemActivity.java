@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Adapter.QuanlysanphamdaxemAdapter;
-import com.example.datn_10116101.Model.Quanlysanphamdaxem;
+import com.example.datn_10116101.model.Quanlysanphamdaxem;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.config.Database;
 

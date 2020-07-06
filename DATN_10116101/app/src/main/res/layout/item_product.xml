@@ -61,12 +61,23 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textview_giachinh"
+            android:id="@+id/textview_giachinh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Giá: 200.000 "
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdaban"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Giá: 200.000 "
+                android:text="Đã bán : 20 "
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="20sp"
                 android:textStyle="bold" />

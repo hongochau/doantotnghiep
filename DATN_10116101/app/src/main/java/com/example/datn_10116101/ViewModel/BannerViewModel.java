@@ -2,7 +2,7 @@ package com.example.datn_10116101.ViewModel;
 
 import com.example.datn_10116101.NetWork.DataClient;
 import com.example.datn_10116101.Service.RetrofitService;
-import com.example.datn_10116101.Model.BannerModel;
+import com.example.datn_10116101.model.BannerModel;
 
 import java.util.List;
 

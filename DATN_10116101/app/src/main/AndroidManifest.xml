@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Fragment.CaNhan.QuanLySanPhamDaDanhGiaActivity"></activity>
+        <activity android:name=".Admin.BanChayNhatActivity"></activity>
+        <activity android:name=".Admin.BillManagerActivity" />
+        <activity android:name=".Admin.AdminActivity" />
+        <activity android:name=".Fragment.CaNhan.QuanLySanPhamDaDanhGiaActivity" />
         <activity android:name=".Fragment.CaNhan.QuanLySanPhamDaXemActivity" />
         <activity android:name=".Fragment.CaNhan.QuanLyThongTinCaNhanActivity" />
         <activity android:name=".Fragment.CaNhan.QuanLyDonHangActivity" />

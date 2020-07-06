@@ -8,10 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.datn_10116101.MenuToobar.TimKiemActivity;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.R;
-import com.example.datn_10116101.Service.RetrofitService;
 import com.squareup.picasso.Picasso;
 
 import java.text.DecimalFormat;

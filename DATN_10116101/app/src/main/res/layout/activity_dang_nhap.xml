@@ -32,23 +32,23 @@
             android:layout_marginRight="32dp"
             android:layout_marginTop="10dp">
 
-        <EditText
-            android:id="@+id/edittext_email"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="@drawable/border"
-            android:ems="10"
-            android:gravity="center|start"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:text="hohau01011998@gmail.com"
-            android:maxLength="30"
-            android:paddingLeft="50dp"
-            android:paddingRight="16dp"
-            android:singleLine="true"
-            android:textColor="@color/colorAccent"
-            android:textColorHint="@color/colorGray"
-            android:textSize="16sp" />
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:gravity="center|start"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:paddingLeft="50dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:text="admin@admin.com"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorGray"
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -82,9 +82,10 @@
                 android:paddingLeft="50dp"
                 android:paddingRight="16dp"
                 android:singleLine="true"
+                android:text="admin"
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorGray"
-                android:textSize="16sp"  />
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="wrap_content"

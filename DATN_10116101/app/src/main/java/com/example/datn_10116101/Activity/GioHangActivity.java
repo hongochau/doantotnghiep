@@ -1,7 +1,6 @@
 package com.example.datn_10116101.Activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -9,7 +8,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.ContentValues;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -20,22 +18,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.datn_10116101.Adapter.GioHangAdapter;
-import com.example.datn_10116101.Model.Cart;
-import com.example.datn_10116101.Model.ChiTietHoaDon;
+import com.example.datn_10116101.model.Cart;
+import com.example.datn_10116101.model.ChiTietHoaDon;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.GioHangViewModel;
 import com.example.datn_10116101.config.Database;
+import com.example.datn_10116101.model.user1s;
+import com.squareup.picasso.Picasso;
+
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-
-import retrofit2.http.DELETE;
 
 import static android.provider.Settings.System.DATE_FORMAT;
 
@@ -87,7 +87,7 @@ static int tongtien1;
                 DateFormat df1 = new SimpleDateFormat("yyyy-MM-dd"); // Format date
                 String date = df1.format(Calendar.getInstance().getTime());
                     // lắng nghe dữ liệu thay đổi được trả về từ server
-                    gioHangViewModel.GhiHoadon(1,"Đơn hàng",tongtien1,  date).observe(GioHangActivity.this, new Observer<Integer>() {
+                    gioHangViewModel.GhiHoadon(us.getId(),"Đơn hàng",tongtien1,  date).observe(GioHangActivity.this, new Observer<Integer>() {
                         @Override
                         public void onChanged(Integer integer) {
                            listCTHD.clear();
@@ -219,5 +219,10 @@ static int tongtien1;
                 super.onScrollStateChanged(recyclerView, newState);
             }
         });
+    }
+    user1s us;
+    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(user1s event) { // lấy từ trong store của EVent bus  user1s là kiểu dữ liệu khai báo vs event bus để lấy ra
+        us=event;
     }
 }

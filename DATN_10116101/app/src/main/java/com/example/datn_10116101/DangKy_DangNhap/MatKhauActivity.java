@@ -15,9 +15,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.datn_10116101.Activity.MainActivity;
 import com.example.datn_10116101.BaseResponse.ResponseUser1s;
-import com.example.datn_10116101.Model.user1s;
+import com.example.datn_10116101.model.user1s;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.UserViewModel;
 

@@ -1,10 +1,8 @@
 package com.example.datn_10116101.BaseResponse;
 
-import com.example.datn_10116101.Model.user1s;
+import com.example.datn_10116101.model.user1s;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
 
 public class ResponseUser1s  extends BaseResponse {
     @SerializedName("data")

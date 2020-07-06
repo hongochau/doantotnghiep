@@ -4,9 +4,8 @@ package com.example.datn_10116101.ViewModel;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.datn_10116101.Model.ChiTietHoaDon;
-import com.example.datn_10116101.Model.HoaDon;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.ChiTietHoaDon;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.NetWork.APIhoadon;
 import com.example.datn_10116101.Service.RetrofitService;
 

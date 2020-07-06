@@ -5,7 +5,6 @@ import androidx.appcompat.widget.SearchView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
@@ -17,11 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.datn_10116101.Adapter.LoadMoreAdapter;
-import com.example.datn_10116101.Adapter.ProductTypeAdapter;
 import com.example.datn_10116101.BaseResponse.ProductBaseResponse;
 import com.example.datn_10116101.ItemClickSupport;
-import com.example.datn_10116101.Model.product_types;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.product_types;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.ProductTypeViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

@@ -10,8 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.datn_10116101.Model.Quanlysanphamdaxem;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.Quanlysanphamdaxem;
 import com.example.datn_10116101.R;
 import com.squareup.picasso.Picasso;
 

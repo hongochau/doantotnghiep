@@ -10,8 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.datn_10116101.Model.ChiTietHoaDon;
-import com.example.datn_10116101.Model.HoaDon;
+import com.example.datn_10116101.model.ChiTietHoaDon;
 import com.example.datn_10116101.R;
 import com.squareup.picasso.Picasso;
 

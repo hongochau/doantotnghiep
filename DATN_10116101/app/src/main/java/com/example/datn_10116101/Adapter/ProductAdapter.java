@@ -5,10 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.R;
 import com.squareup.picasso.Picasso;
 
@@ -43,6 +42,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             holder.textview_title.setText(currentpro.getName());
             holder.textview_description.setText(currentpro.getDescribe());
             holder.textview_giachinh.setText(format(currentpro.getPrice()));
+            holder.txtdaban.setText("Đã bán: "+currentpro.getDaban());
             Picasso.get()
                     .load(""+currentpro.getImage())
                    .resize(150, 150)
@@ -60,6 +60,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             TextView textview_description;
             TextView textview_title;
             TextView textview_giachinh;
+            TextView txtdaban;
             ImageView imgageview_hinhanhsanpham;
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -67,6 +68,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
                 textview_description = itemView.findViewById(R.id.textview_description);
                 textview_giachinh = itemView.findViewById(R.id.textview_giachinh);
                 imgageview_hinhanhsanpham = itemView.findViewById(R.id.imgageview_hinhanhsanpham);
+                txtdaban=itemView.findViewById(R.id.txtdaban);
 
             }
         }

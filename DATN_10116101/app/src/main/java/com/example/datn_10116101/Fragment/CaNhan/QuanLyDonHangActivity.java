@@ -14,7 +14,7 @@ import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Activity.ChiTietDonHangActivity;
 import com.example.datn_10116101.Adapter.HoaDonAdapter;
 import com.example.datn_10116101.ItemClickSupport;
-import com.example.datn_10116101.Model.HoaDon;
+import com.example.datn_10116101.model.HoaDon;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.HoaDonViewModel;
 

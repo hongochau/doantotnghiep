@@ -1,7 +1,5 @@
 package com.example.datn_10116101.MenuToobar;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Adapter.TimKiemAdapter;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.ProductViewModel;
 

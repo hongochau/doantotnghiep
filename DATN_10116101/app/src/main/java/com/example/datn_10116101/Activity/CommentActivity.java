@@ -1,29 +1,22 @@
 package com.example.datn_10116101.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.datn_10116101.Model.feedback_products;
-import com.example.datn_10116101.Model.products;
-import com.example.datn_10116101.Model.user1s;
+import com.example.datn_10116101.model.feedback_products;
+import com.example.datn_10116101.model.products;
+import com.example.datn_10116101.model.user1s;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.FeedbackViewModel;
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 
 public class CommentActivity extends BaseActivity {
 

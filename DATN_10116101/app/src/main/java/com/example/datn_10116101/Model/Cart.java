@@ -1,4 +1,4 @@
-package com.example.datn_10116101.Model;
+package com.example.datn_10116101.model;
 
 public class Cart {
     public Cart(int id, int idproduct, int cout, int price, String voucher, String date, String tenproduct, String hinhanhproduct, String motaproduct) {

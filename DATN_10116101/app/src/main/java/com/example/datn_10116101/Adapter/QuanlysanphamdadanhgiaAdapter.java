@@ -8,9 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.example.datn_10116101.Model.FeedbackUser;
+import com.example.datn_10116101.model.FeedbackUser;
 import com.example.datn_10116101.R;
-import com.example.datn_10116101.Service.RetrofitService;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

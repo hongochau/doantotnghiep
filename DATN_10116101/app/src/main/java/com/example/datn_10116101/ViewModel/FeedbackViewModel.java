@@ -1,11 +1,9 @@
 package com.example.datn_10116101.ViewModel;
 
 
-import android.widget.ListView;
-
 import com.example.datn_10116101.BaseResponse.BaseResponseFeedback;
-import com.example.datn_10116101.Model.FeedbackUser;
-import com.example.datn_10116101.Model.feedback_products;
+import com.example.datn_10116101.model.FeedbackUser;
+import com.example.datn_10116101.model.feedback_products;
 import com.example.datn_10116101.NetWork.APIfeedback;
 import com.example.datn_10116101.Service.RetrofitService;
 

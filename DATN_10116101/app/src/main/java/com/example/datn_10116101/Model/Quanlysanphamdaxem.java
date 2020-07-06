@@ -1,4 +1,4 @@
-package com.example.datn_10116101.Model;
+package com.example.datn_10116101.model;
 
 public class Quanlysanphamdaxem {
     int id;

@@ -1,6 +1,6 @@
 package com.example.datn_10116101.NetWork;
 
-import com.example.datn_10116101.Model.BannerModel;
+import com.example.datn_10116101.model.BannerModel;
 
 import java.util.List;
 

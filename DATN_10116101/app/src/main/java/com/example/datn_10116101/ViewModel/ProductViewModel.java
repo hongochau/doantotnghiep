@@ -3,7 +3,7 @@ package com.example.datn_10116101.ViewModel;
 
 
 import com.example.datn_10116101.BaseResponse.ProductBaseResponse;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.NetWork.APIProduct;
 import com.example.datn_10116101.Service.RetrofitService;
 

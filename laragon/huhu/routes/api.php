@@ -71,7 +71,11 @@ Route::post('getfeedbackWithIdUser', 'FeedBackController@getfeedbackWithIdUser')
 //Quanlysanpham
 Route::post('Sanphamdaxem', 'QuanlysanphamController@Sanphamdaxem')->name('Sanphamdaxem');
 
+// orther
 
+Route::post('getAllBillWithType', 'OrtherController@getAllBillWithType')->name('getAllBillWithType');
+Route::post('changeStatus', 'OrtherController@changeStatus')->name('changeStatus');
+Route::get('getDescProduct', 'OrtherController@getDescProduct')->name('getDescProduct');
 
 
 

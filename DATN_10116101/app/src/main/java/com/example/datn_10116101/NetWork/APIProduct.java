@@ -2,7 +2,7 @@ package com.example.datn_10116101.NetWork;
 
 
 import com.example.datn_10116101.BaseResponse.ProductBaseResponse;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.products;
 
 import java.util.List;
 

@@ -4,14 +4,10 @@ package com.example.datn_10116101.ViewModel;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.datn_10116101.BaseResponse.ProductBaseResponse;
 import com.example.datn_10116101.BaseResponse.ResponseUser1s;
-import com.example.datn_10116101.Model.products;
-import com.example.datn_10116101.NetWork.APIProduct;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.NetWork.ApiUser;
 import com.example.datn_10116101.Service.RetrofitService;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -1,7 +1,7 @@
 package com.example.datn_10116101.ViewModel;
 
 import com.example.datn_10116101.BaseResponse.ProductBaseResponse;
-import com.example.datn_10116101.Model.product_types;
+import com.example.datn_10116101.model.product_types;
 import com.example.datn_10116101.NetWork.APIProduct;
 import com.example.datn_10116101.NetWork.APIProducttype;
 import com.example.datn_10116101.Service.RetrofitService;

@@ -1,4 +1,4 @@
-package com.example.datn_10116101.Model;
+package com.example.datn_10116101.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -20,6 +20,13 @@ public class HoaDon {
     @SerializedName("Bookingtime")
     @Expose
     private String bookingtime;
+
+    @SerializedName("name")
+    @Expose
+    private String nameUser;
+    @SerializedName("imagefb")
+    @Expose
+    private String imgfb;
 
     public HoaDon() {
     }
@@ -72,4 +79,19 @@ public class HoaDon {
         this.bookingtime = bookingtime;
     }
 
+    public String getNameUser() {
+        return nameUser;
+    }
+
+    public void setNameUser(String nameUser) {
+        this.nameUser = nameUser;
+    }
+
+    public String getImgfb() {
+        return imgfb;
+    }
+
+    public void setImgfb(String imgfb) {
+        this.imgfb = imgfb;
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.datn_10116101.Model;
+package com.example.datn_10116101.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -22,8 +22,12 @@ public class products {
     @SerializedName("image")
     @Expose
     private String image;
+    @SerializedName("daban")
+    @Expose
+    private Integer daban;
     @SerializedName("created_at")
     @Expose
+
     private Object createdAt;
     @SerializedName("updated_at")
     @Expose
@@ -91,5 +95,13 @@ public class products {
 
     public void setUpdatedAt(Object updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public Integer getDaban() {
+        return daban;
+    }
+
+    public void setDaban(Integer daban) {
+        this.daban = daban;
     }
 }

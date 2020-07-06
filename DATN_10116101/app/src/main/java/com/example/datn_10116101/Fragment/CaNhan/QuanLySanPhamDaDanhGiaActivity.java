@@ -9,8 +9,8 @@ import android.widget.Toast;
 
 import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Adapter.QuanlysanphamdadanhgiaAdapter;
-import com.example.datn_10116101.Model.FeedbackUser;
-import com.example.datn_10116101.Model.user1s;
+import com.example.datn_10116101.model.FeedbackUser;
+import com.example.datn_10116101.model.user1s;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.FeedbackViewModel;
 

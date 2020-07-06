@@ -1,7 +1,5 @@
 package com.example.datn_10116101.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,17 +8,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.datn_10116101.Adapter.ChiTietHoaDonAdapter;
-import com.example.datn_10116101.Adapter.HoaDonAdapter;
-import com.example.datn_10116101.Model.ChiTietHoaDon;
-import com.example.datn_10116101.Model.HoaDon;
-import com.example.datn_10116101.Model.user1s;
+import com.example.datn_10116101.model.ChiTietHoaDon;
+import com.example.datn_10116101.model.HoaDon;
+import com.example.datn_10116101.model.user1s;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.ChiTietHoaDonViewModel;
-import com.example.datn_10116101.ViewModel.HoaDonViewModel;
 import com.vinay.stepview.StepView;
 import com.vinay.stepview.models.Step;
 

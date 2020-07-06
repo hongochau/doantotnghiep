@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.example.datn_10116101.Model.feedback_products;
+import com.example.datn_10116101.model.feedback_products;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.Service.RetrofitService;
 import com.squareup.picasso.Picasso;

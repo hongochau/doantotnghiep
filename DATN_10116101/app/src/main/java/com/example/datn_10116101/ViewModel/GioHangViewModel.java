@@ -3,15 +3,12 @@ package com.example.datn_10116101.ViewModel;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.datn_10116101.BaseResponse.ProductBaseResponse;
-import com.example.datn_10116101.Model.ChiTietHoaDon;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.ChiTietHoaDon;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.NetWork.APIhoadon;
 import com.example.datn_10116101.Service.RetrofitService;
 
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -44,7 +41,9 @@ public class GioHangViewModel extends ViewModel {
         dataClient.GhiChiTietHoaDon(chiTietHoaDons).enqueue(new Callback<Boolean>() {
             @Override
             public void onResponse(Call<Boolean> call, Response<Boolean> response) {
-                newsData.setValue(response.body());
+                if(response.isSuccessful()){
+                    newsData.setValue(response.body());
+                }
             }
 
             @Override

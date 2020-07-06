@@ -42,8 +42,6 @@ class LoginController extends Controller
             $mail=User1s::where('email',$request->input('email')) 
             ->where('password',$request->input('password')) 
             ->first();
-           
-    
             if($mail==null){ 
                 return response()->json([ 
                     'status' => 'FAIL',

@@ -15,11 +15,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.datn_10116101.Activity.GioHangActivity;
-import com.example.datn_10116101.Activity.MainActivity;
-import com.example.datn_10116101.Model.Cart;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.Cart;
 import com.example.datn_10116101.R;
-import com.example.datn_10116101.Service.RetrofitService;
 import com.squareup.picasso.Picasso;
 
 import java.text.DecimalFormat;

@@ -1,6 +1,6 @@
 package com.example.datn_10116101.BaseResponse;
 
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.products;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

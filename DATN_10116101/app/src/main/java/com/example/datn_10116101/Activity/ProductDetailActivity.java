@@ -16,15 +16,12 @@ import android.widget.TextView;
 
 import com.example.datn_10116101.Adapter.FeedbackAdapter;
 import com.example.datn_10116101.BaseResponse.BaseResponseFeedback;
-import com.example.datn_10116101.DangKy_DangNhap.DangNhapActivity;
-import com.example.datn_10116101.Model.feedback_products;
-import com.example.datn_10116101.Model.products;
+import com.example.datn_10116101.model.feedback_products;
+import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.FeedbackViewModel;
-import com.example.datn_10116101.ViewModel.ProductViewModel;
 import com.example.datn_10116101.config.Database;
 
-import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 

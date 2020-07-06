@@ -1,8 +1,8 @@
 package com.example.datn_10116101.NetWork;
 
 import com.example.datn_10116101.BaseResponse.BaseResponseFeedback;
-import com.example.datn_10116101.Model.FeedbackUser;
-import com.example.datn_10116101.Model.feedback_products;
+import com.example.datn_10116101.model.FeedbackUser;
+import com.example.datn_10116101.model.feedback_products;
 
 
 import java.util.List;

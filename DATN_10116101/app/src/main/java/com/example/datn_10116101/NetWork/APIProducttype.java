@@ -1,6 +1,6 @@
 package com.example.datn_10116101.NetWork;
 
-import com.example.datn_10116101.Model.product_types;
+import com.example.datn_10116101.model.product_types;
 
 import java.util.List;
 

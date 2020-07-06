@@ -1,7 +1,7 @@
 package com.example.datn_10116101.BaseResponse;
 
 
-import com.example.datn_10116101.Model.feedback_products;
+import com.example.datn_10116101.model.feedback_products;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

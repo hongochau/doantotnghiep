@@ -2,12 +2,9 @@ package com.example.datn_10116101.NetWork;
 
 
 
-import com.example.datn_10116101.Model.Billresponse;
-import com.example.datn_10116101.Model.ChiTietHoaDon;
-import com.example.datn_10116101.Model.HoaDon;
+import com.example.datn_10116101.model.ChiTietHoaDon;
+import com.example.datn_10116101.model.HoaDon;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import retrofit2.Call;

@@ -1,7 +1,7 @@
 package com.example.datn_10116101.NetWork;
 
 
-import com.example.datn_10116101.Model.vouchers;
+import com.example.datn_10116101.model.vouchers;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
