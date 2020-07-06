@@ -41,17 +41,17 @@ public class ChiTietHoaDonAdapter extends RecyclerView.Adapter<ChiTietHoaDonAdap
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) { // đưa dữ liệu vào adapter
         ChiTietHoaDon currentpro = notes.get(position);
         holder.textview_id.setText("Mã hóa đơn: "+currentpro.getId());
-        holder.textview_idhoadon.setText(""+currentpro.getIdhoadon());
-        holder.textview_masanpham.setText(format(currentpro.getMasanpham()));
-        holder.textview_soluong.setText(""+currentpro.getSoluong());
-        holder.textview_gia.setText(""+currentpro.getGia());
-        holder.textview_tensanpham.setText(currentpro.getTensanpham());
-        Picasso.get()
+        holder.textview_idhoadon.setText("Mã hóa đơn: "+currentpro.getIdhoadon());
+        holder.textview_masanpham.setText("Mã sản phẩm: "+currentpro.getMasanpham());
+        holder.textview_soluong.setText("Số lượng: "+currentpro.getSoluong());
+        holder.textview_gia.setText("Giá: "+currentpro.getGia());
+        holder.textview_tensanpham.setText("Tên sản phẩm: "+currentpro.getTensanpham());
+        /*Picasso.get()
                 .load(""+currentpro.getHinhanh())
                 .resize(150, 150)
                 .centerCrop()
                 .into(holder.image_hinhanh);
-        holder.textview_mota.setText(currentpro.getMota());
+        holder.textview_mota.setText(currentpro.getMota());*/
 
     }
 
@@ -77,8 +77,8 @@ public class ChiTietHoaDonAdapter extends RecyclerView.Adapter<ChiTietHoaDonAdap
             textview_soluong = itemView.findViewById(R.id.textview_soluong);
             textview_gia = itemView.findViewById(R.id.textview_gia);
             textview_tensanpham = itemView.findViewById(R.id.textview_tensanpham);
-            image_hinhanh = itemView.findViewById(R.id.image_hinhanh);
-            textview_mota = itemView.findViewById(R.id.textview_mota);
+            //image_hinhanh = itemView.findViewById(R.id.image_hinhanh);
+            //textview_mota = itemView.findViewById(R.id.textview_mota);
 
         }
     }

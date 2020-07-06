@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:textSize="18dp"
-        android:fontFamily="@font/roboto_bolditalic"
+        android:fontFamily="@font/roboto_bold"
         android:textColor="#FF9800"
         android:gravity="center"
         android:text="Hnh Electronics Stores" />

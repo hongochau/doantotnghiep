@@ -27,7 +27,7 @@
             android:textColor="#FF9800"
             android:layout_gravity="center"
             android:gravity="center"
-            android:fontFamily="@font/roboto_bolditalic"
+            android:fontFamily="@font/roboto_bold"
             android:text="Tìm kiếm" />
     </LinearLayout>
     <ListView

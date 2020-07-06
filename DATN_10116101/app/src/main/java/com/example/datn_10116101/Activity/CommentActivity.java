@@ -54,7 +54,7 @@ public class CommentActivity extends BaseActivity {
     }
 
     private void initView() {
-        txttensp=findViewById(R.id.txttensanpham);
+        //txttensp=findViewById(R.id.txttensanpham);
         txtpost=findViewById(R.id.txtpost);
         imghinhsp=findViewById(R.id.imghinhsp);
         rateting=findViewById(R.id.rateingpro);

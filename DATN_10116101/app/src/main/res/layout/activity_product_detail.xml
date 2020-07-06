@@ -23,7 +23,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,7 +56,7 @@
                             android:layout_marginRight="5dp"
                             android:fontFamily="@font/roboto_bolditalic"
                             android:text="Giá: 1000000"
-                            android:textColor="@color/colorDarkWhite"
+                            android:textColor="@color/colordo"
                             android:textSize="24sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -111,8 +110,8 @@
                         android:layout_height="172dp"
                         android:ellipsize="end"
                         android:maxHeight="300dp"
-                        android:text="Sản Phẩm"
-                        android:textSize="12sp" />
+                        android:text="Mô tả"
+                        android:textSize="15sp" />
 
                     <Button
                         android:id="@+id/btnchonmua"

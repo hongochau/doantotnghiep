@@ -7,8 +7,8 @@
     <TextView
         android:id="@+id/txtname"
         android:padding="10dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
+        android:textSize="15dp"
         android:text="Loại sản phẩm" />
 </LinearLayout>

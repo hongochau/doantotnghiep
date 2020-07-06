@@ -25,7 +25,7 @@
             android:id="@+id/textview_soluong"
             android:text="Giỏ hàng"
             android:textColor="#FF9800"
-            android:fontFamily="@font/roboto_bolditalic"
+            android:fontFamily="@font/roboto_bold"
             android:gravity="center"
             android:textSize="18sp"
             android:textStyle="bold"

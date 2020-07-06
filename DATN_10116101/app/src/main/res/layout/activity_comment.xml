@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -26,7 +25,6 @@
             android:orientation="horizontal">
 
             <ImageView
-
                 android:id="@+id/imghinhsp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -39,12 +37,6 @@
                 android:layout_weight="4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/txttensanpham"
-                    android:text="HnH Electronics Store"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:text="Xếp hạng mặt hàng này"
                     android:layout_width="match_parent"

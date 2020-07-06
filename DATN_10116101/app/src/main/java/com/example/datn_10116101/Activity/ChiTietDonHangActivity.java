@@ -64,7 +64,6 @@ public class ChiTietDonHangActivity extends BaseActivity {
         textview_diachigiaohang = findViewById(R.id.textview_diachigiaohang);
         textview_email = findViewById(R.id.textview_email);
         textview_sodienthoai = findViewById(R.id.textview_sodienthoai);
-        textview_ghichu = findViewById(R.id.textview_ghichu);
         imageview_thoat = findViewById(R.id.imageview_thoat);
         imageview_thoat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +90,7 @@ public class ChiTietDonHangActivity extends BaseActivity {
          textview_email.setText(""+event.getEmail());
          textview_diachigiaohang.setText(""+event.getAddress());
          textview_sodienthoai.setText(""+event.getPhone());
-         textview_ghichu.setText(""+event.getSex());
+         //textview_ghichu.setText(""+event.getSex());
     }
 
     private void loadchitiethoadon(int idhoadon) {

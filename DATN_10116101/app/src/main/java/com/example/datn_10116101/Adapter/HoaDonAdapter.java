@@ -41,9 +41,9 @@ public class HoaDonAdapter extends RecyclerView.Adapter<HoaDonAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         HoaDon currentpro = notes.get(position);
-        holder.textview_iduser.setText("Mã người mua: "+currentpro.getId());
+        holder.textview_iduser.setText("Mã người dùng: "+currentpro.getId());
         holder.textview_Status.setText(currentpro.getStatus());
-        holder.textview_tonggiatien.setText("Tổng tiền: "+format(currentpro.getTotalprice()));
+        holder.textview_tonggiatien.setText("Tổng: "+format(currentpro.getTotalprice()));
         holder.textview_thoigiandat.setText(currentpro.getBookingtime());
     }
 
@@ -59,7 +59,7 @@ public class HoaDonAdapter extends RecyclerView.Adapter<HoaDonAdapter.ViewHolder
         TextView textview_thoigiandat;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textview_Status = itemView.findViewById(R.id.textview_Status);
+            //textview_Status = itemView.findViewById(R.id.textview_Status);
             textview_iduser = itemView.findViewById(R.id.textview_iduser);
             textview_tonggiatien = itemView.findViewById(R.id.textview_tonggiatien);
             textview_thoigiandat = itemView.findViewById(R.id.textview_thoigiandat);

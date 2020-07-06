@@ -42,7 +42,7 @@
                         android:layout_marginTop="16dp"
                         android:orientation="vertical">
 
-                        <RatingBar
+                        <!--<RatingBar
                             android:id="@+id/rateing_danhgia"
                             style="?android:attr/ratingBarStyleSmall"
                             android:layout_width="wrap_content"
@@ -51,12 +51,12 @@
                             android:isIndicator="false"
                             android:numStars="5"
                             android:rating="3"
-                            android:stepSize="0.1" />
+                            android:stepSize="0.1" />-->
 
                         <TextView
                             android:id="@+id/textview_tensanpham"
                             android:layout_width="match_parent"
-                            android:layout_height="69dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="5dp"
                             android:gravity="center|left"
                             android:text="Tên sản phẩm"
@@ -106,7 +106,7 @@
 
             </LinearLayout>
 
-            <LinearLayout
+           <!-- <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
@@ -177,7 +177,7 @@
                         android:text="Share"
                         android:textColor="#F06A90B5" />
                 </LinearLayout>
-            </LinearLayout>
+            </LinearLayout>-->
 
             <LinearLayout
                 android:gravity="center"
