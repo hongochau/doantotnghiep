@@ -14,6 +14,7 @@ import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Activity.ChiTietDonHangActivity;
 import com.example.datn_10116101.Adapter.HoaDonAdapter;
 import com.example.datn_10116101.ItemClickSupport;
+import com.example.datn_10116101.config.Common;
 import com.example.datn_10116101.model.HoaDon;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.HoaDonViewModel;
@@ -36,7 +37,7 @@ public class QuanLyDonHangActivity extends BaseActivity {
         setContentView(R.layout.activity_hoadon);
         hoaDonViewModel= ViewModelProviders.of(this).get(HoaDonViewModel.class);
         Anhxa();
-        hoaDonViewModel.getHoadon(1,"Đơn hàng").observe(this, new Observer<List<HoaDon>>() {
+        hoaDonViewModel.getHoadon(Common.muser1s.getId(),"Đơn hàng").observe(this, new Observer<List<HoaDon>>() {
             @Override
             public void onChanged(List<HoaDon> hoaDons) {
                 list.addAll(hoaDons);

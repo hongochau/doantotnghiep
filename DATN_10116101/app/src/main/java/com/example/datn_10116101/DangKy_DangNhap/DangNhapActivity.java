@@ -17,6 +17,7 @@ import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Activity.MainActivity;
 import com.example.datn_10116101.Admin.AdminActivity;
 import com.example.datn_10116101.BaseResponse.ResponseUser1s;
+import com.example.datn_10116101.config.Common;
 import com.example.datn_10116101.model.user1s;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.UserViewModel;
@@ -89,6 +90,7 @@ public class DangNhapActivity extends BaseActivity implements View.OnClickListen
                             startActivity(new Intent(DangNhapActivity.this, AdminActivity.class));
                         } else {
                             user1s us = responseUser1s.getData();
+                            Common.muser1s=us;
                             EventBus.getDefault().postSticky(us); // đưa dữ liệu vào Eventbus
                             startActivity(new Intent(DangNhapActivity.this, MainActivity.class));
                         }
