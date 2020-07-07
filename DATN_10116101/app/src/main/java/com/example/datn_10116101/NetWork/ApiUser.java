@@ -11,11 +11,11 @@ import retrofit2.http.POST;
 public interface ApiUser { 
     @FormUrlEncoded
     @POST("api/CheckUser")
-    Call<ResponseUser1s> login(@Field("email") String tk, @Field("password") String mk);
+    Call<ResponseUser1s> login(@Field("phone") String phone, @Field("password") String mk);
 
     @FormUrlEncoded
     @POST("api/Register")
-    Call<ResponseUser1s> Register(@Field("email") String tk,
+    Call<ResponseUser1s> Register(@Field("phone") String phone,
                                   @Field("account") String acc,
                                        @Field("password") String mk);
 

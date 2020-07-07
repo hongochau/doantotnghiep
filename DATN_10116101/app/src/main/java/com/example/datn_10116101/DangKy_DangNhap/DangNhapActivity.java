@@ -78,10 +78,10 @@ public class DangNhapActivity extends BaseActivity implements View.OnClickListen
         } else if (v == textView_Dangky) {
             startActivity(new Intent(DangNhapActivity.this, DangKyActivity.class));
         } else if (v == button_Dangnhap) {
-            String Taikhoan = editText_Email.getText().toString().toLowerCase();
+            String phone = editText_Email.getText().toString().toLowerCase();
             String Matkhau = editText_Password.getText().toString();
             // call api đăng nhập
-            userViewModel.Login(Taikhoan, Matkhau).observe(DangNhapActivity.this, new Observer<ResponseUser1s>() {
+            userViewModel.Login(phone, Matkhau).observe(DangNhapActivity.this, new Observer<ResponseUser1s>() {
                 @Override
                 public void onChanged(ResponseUser1s responseUser1s) {
                     if (responseUser1s.getStatus().equals("SUCCESS")) { // check status trả về

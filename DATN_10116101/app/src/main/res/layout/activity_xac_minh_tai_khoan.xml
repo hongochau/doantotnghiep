@@ -33,6 +33,8 @@
         app:backgroundTint="@color/colorPrimary"
         app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
 
-    <include layout="@layout/content_xac_minh_tai_khoan" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_xac_minh_tai_khoan" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

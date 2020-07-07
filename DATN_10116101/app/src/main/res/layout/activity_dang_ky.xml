@@ -7,7 +7,9 @@
     tools:context=".DangKy_DangNhap.DangKyActivity">
 
 
-    <include layout="@layout/content_dang_ky" />
+    <include
+        android:id="@+id/includeView"
+        layout="@layout/content_dang_ky" />
     <LinearLayout
         android:id="@+id/text_dangnhap"
         android:layout_width="wrap_content"
@@ -42,6 +44,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@color/colorPrimary"
+        android:visibility="invisible"
         app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
 
 

@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center|start"
                 android:textColor="@color/colorGray"
-                android:text="Mã xác minh"
+                android:text="Xác minh SDT : "
                 android:textSize="16sp" />
 
             <TextView
@@ -62,7 +62,6 @@
                 android:layout_height="wrap_content"
                 android:gravity="center|start"
                 android:textColor="@color/colorGray"
-                android:text="HnhElectronicShopHelp@gmail.com"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -87,6 +86,7 @@
             android:textColorHint="@color/colorGray"
             android:letterSpacing="0.2"/>
         <TextView
+            android:visibility="invisible"
             android:id="@+id/textView_b2_nhaplaimacode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -134,11 +134,14 @@
             </LinearLayout>
 
             <RelativeLayout
+                android:id="@+id/linearlayout"
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_marginTop="20dp">
 
                 <EditText
+
                     android:id="@+id/editText_b2_nhaptendangnhap"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -147,6 +150,7 @@
                     android:layout_alignParentBottom="true"
                     android:ems="10"
                     android:hint="Tên đăng nhập"
+
                     android:inputType="textPersonName"
                     android:textColorHint="@color/colorGray" />
 
@@ -164,6 +168,7 @@
             </RelativeLayout>
         </LinearLayout>
         <TextView
+            android:visibility="invisible"
             android:id="@+id/textView_b2_nhaplaitendangnhap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

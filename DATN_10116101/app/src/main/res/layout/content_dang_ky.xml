@@ -44,8 +44,8 @@
             android:layout_marginLeft="28dp"
             android:layout_marginTop="10dp"
             android:gravity="center|start"
+            android:text="Nhập số điện thoại của bạn để tiếp tục"
             android:textColor="@color/colorGray"
-            android:text="Nhập địa chỉ email của bạn để tiếp tục"
             android:textSize="18sp" />
 
         <RelativeLayout
@@ -56,7 +56,7 @@
             android:layout_marginRight="25dp">
 
             <EditText
-                android:id="@+id/editText_b1_email"
+                android:id="@+id/edt_b1_sdt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
@@ -64,8 +64,9 @@
                 android:layout_alignParentRight="false"
                 android:layout_alignParentBottom="true"
                 android:ems="10"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
+                android:hint="Phone"
+                android:text="+8481644510"
+                android:inputType="phone"
                 android:textColorHint="@color/colorGray" />
 
             <ImageView
@@ -86,7 +87,7 @@
             android:id="@+id/textView_b1_email_tontaihaychua"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Địa chỉ Email đã tồn tại. Xin vui lòng thử lại"
+            android:text="Số điện thoại đã tồn tại. Xin vui lòng thử lại"
             android:textColor="@color/colorRed"
             android:layout_marginLeft="28dp"
             android:textSize="12sp" />

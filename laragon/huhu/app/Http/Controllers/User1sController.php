@@ -70,7 +70,46 @@ class User1sController extends Controller
         }
        
     }
+// đăng ký làm lại 
+public function checkPhone(Request $request){
+    $phone=$request->input('phone');
+    $user = DB::table('user1s')
+    ->where('phone',$phone)
+    ->first();
+    if($user!=null){
+        return response()->json([
+            'status' => 'FAIL',
+             'mess' => 'FAIL',
+            'data'=> null
+            ]);
+    }
+    return response()->json([
+        'status' => 'SUCCESS',
+         'mess' => 'SUCCESS',
+        'data'=> null
+        ]);
+   
+}
 
+public function checkAccount(Request $request){
+    $acc=$request->input('acc');
+    $user = DB::table('user1s')
+    ->where('account',$acc)
+    ->first();
+    if($user!=null){
+        return response()->json([
+            'status' => 'FAIL',
+             'mess' => 'FAIL',
+            'data'=> null
+            ]);
+    }
+    return response()->json([
+        'status' => 'SUCCESS',
+         'mess' => 'SUCCESS',
+        'data'=> null
+        ]);
+   
+}
 
     public function uploadImage(Request $rq){
         $posts =  $rq->file('image');

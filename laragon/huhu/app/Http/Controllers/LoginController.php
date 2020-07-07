@@ -11,7 +11,7 @@ class LoginController extends Controller
     public function Register(Request $request){
         $user=new User1s();
         $user->password=$request->input('password');
-        $user->email=$request->input('email');
+        $user->phone=$request->input('phone');
         $user->account=$request->input('account');
         $us=User1s::where('account',$request->input('account'))->first();
         $mail=User1s::where('email',$request->input('email'))->first();
@@ -39,7 +39,7 @@ class LoginController extends Controller
                 }
             }
         public function CheckUser(Request $request){ 
-            $mail=User1s::where('email',$request->input('email')) 
+            $mail=User1s::where('phone',$request->input('phone'))
             ->where('password',$request->input('password')) 
             ->first();
             if($mail==null){ 

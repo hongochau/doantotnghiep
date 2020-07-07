@@ -78,6 +78,12 @@ Route::post('changeStatus', 'OrtherController@changeStatus')->name('changeStatus
 Route::get('getDescProduct', 'OrtherController@getDescProduct')->name('getDescProduct');
 Route::post('getHoadonbeetween', 'OrtherController@getHoadonbeetween')->name('getHoadonbeetween');
 
+// đăng ký 
+Route::post('checkPhone', 'User1sController@checkPhone')->name('checkPhone');
+Route::post('checkAccount', 'User1sController@checkAccount')->name('checkAccount');
+
+
+
 
 
 

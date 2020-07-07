@@ -25,7 +25,9 @@ public class HoaDonViewModel extends ViewModel {
         dataClient.getHoaDon(idUser,stt).enqueue(new Callback<List<HoaDon>>() {
             @Override
             public void onResponse(Call<List<HoaDon>> call, Response<List<HoaDon>> response) {
-                newsData.setValue(response.body());
+               if(response.isSuccessful()){
+                   newsData.setValue(response.body());
+               }
             }
 
             @Override
