@@ -1,10 +1,12 @@
 package com.example.datn_10116101.Adapter;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -44,7 +46,7 @@ public class QuanlysanphamdadanhgiaAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
        convertView= inflater.inflate(R.layout.item_quanlysanphamdadanhgia,null);
-        CircleImageView  cricleimageview_hinhanhsanpham =  convertView.findViewById(R.id.cricleimageview_hinhanhsanpham);
+        ImageView cricleimageview_hinhanhsanpham =  convertView.findViewById(R.id.cricleimageview_hinhanhsanpham);
         TextView  textview_nguoidungphanhoi =  convertView.findViewById(R.id.textview_nguoidungphanhoi);
         TextView  textview_tensanphamdanhgia =  convertView.findViewById(R.id.textview_tensanphamdanhgia);
         TextView  textview_noidungdanhgia =  convertView.findViewById(R.id.textview_noidungdanhgia);
