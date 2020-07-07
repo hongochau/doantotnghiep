@@ -29,5 +29,11 @@ public class AdminActivity extends AppCompatActivity {
                 startActivity(new Intent(AdminActivity.this, BanChayNhatActivity.class));
             }
         });
+        binding.button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminActivity.this, ThongkeActivity.class));
+            }
+        });
     }
 }

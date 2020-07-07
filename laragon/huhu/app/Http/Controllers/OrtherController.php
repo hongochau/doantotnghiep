@@ -53,5 +53,19 @@ class OrtherController extends Controller
         return response()->json($result);
         
     }
+
+    public function getHoadonbeetween(Request $request)
+    {
+      $from = $request->input('from');
+      $to = $request->input('to');
+      
+     $billus= DB::table('Hoadon')
+      ->whereBetween('Bookingtime', [$from, $to])
+      ->where('Status', 'Đã giao')
+      ->leftJoin('user1s', 'hoadon.IdUser', '=', 'user1s.id')
+      ->select('user1s.name','user1s.imagefb', 'Hoadon.*')
+      ->get();
+      return response()->json($billus);
+    }
     
 }

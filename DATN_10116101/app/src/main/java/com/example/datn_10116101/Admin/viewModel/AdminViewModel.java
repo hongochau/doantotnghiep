@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 import com.example.datn_10116101.Admin.APIadmin;
 import com.example.datn_10116101.BaseResponse.ResponseBill;
 import com.example.datn_10116101.Service.RetrofitService;
+import com.example.datn_10116101.model.HoaDon;
 import com.example.datn_10116101.model.products;
 
 import java.util.List;
@@ -65,6 +66,24 @@ public class AdminViewModel extends ViewModel {
 
             @Override
             public void onFailure(Call<List<products>> call, Throwable t) {
+
+            }
+        });
+        return newsData;
+    }
+
+    public MutableLiveData<List<HoaDon>> getHoadonbeetween(String from, String to){
+        final MutableLiveData<List<HoaDon>>  newsData = new MutableLiveData<>();
+        apIadmin.getHoadonbeetween(from,to).enqueue(new Callback<List<HoaDon>>() {
+            @Override
+            public void onResponse(Call<List<HoaDon>> call, Response<List<HoaDon>> response) {
+                if(response.isSuccessful()){
+                    newsData.setValue(response.body());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<HoaDon>> call, Throwable t) {
 
             }
         });

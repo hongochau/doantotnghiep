@@ -76,6 +76,8 @@ Route::post('Sanphamdaxem', 'QuanlysanphamController@Sanphamdaxem')->name('Sanph
 Route::post('getAllBillWithType', 'OrtherController@getAllBillWithType')->name('getAllBillWithType');
 Route::post('changeStatus', 'OrtherController@changeStatus')->name('changeStatus');
 Route::get('getDescProduct', 'OrtherController@getDescProduct')->name('getDescProduct');
+Route::post('getHoadonbeetween', 'OrtherController@getHoadonbeetween')->name('getHoadonbeetween');
+
 
 
 

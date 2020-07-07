@@ -18,4 +18,10 @@
         android:layout_width="match_parent"
         android:layout_height="116dp"
         android:text="Mặt hàng bán chạy nhất " />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:text="Thống kê" />
 </LinearLayout>

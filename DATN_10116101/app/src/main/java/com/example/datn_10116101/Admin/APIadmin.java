@@ -1,6 +1,7 @@
 package com.example.datn_10116101.Admin;
 
 import com.example.datn_10116101.BaseResponse.ResponseBill;
+import com.example.datn_10116101.model.HoaDon;
 import com.example.datn_10116101.model.products;
 
 import java.util.List;
@@ -22,4 +23,9 @@ public interface APIadmin {
 
     @GET("api/getDescProduct")
     Call<List<products>> getDescProduct();
+
+    @FormUrlEncoded
+    @POST("api/getHoadonbeetween")
+    Call<List<HoaDon>> getHoadonbeetween(@Field("from") String from, @Field("to") String to);
+
 }
