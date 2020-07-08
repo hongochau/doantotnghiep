@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,11 +16,15 @@ import android.widget.Toast;
 import com.example.datn_10116101.Adapter.TimKiemSpinnerAdapter;
 import com.example.datn_10116101.Adapter.LoadMoreAdapter;
 import com.example.datn_10116101.BaseResponse.ProductBaseResponse;
+import com.example.datn_10116101.ItemClickSupport;
+import com.example.datn_10116101.model.Quanlysanphamdaxem;
 import com.example.datn_10116101.model.product_types;
 import com.example.datn_10116101.model.products;
 import com.example.datn_10116101.R;
 import com.example.datn_10116101.ViewModel.ProductTypeViewModel;
 import com.example.datn_10116101.ViewModel.ProductViewModel;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +78,18 @@ public class LoadMoreActivity extends BaseActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+
+        ItemClickSupport.addTo(recyclerView).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                products pro=rowsArrayList.get(position);
+                EventBus.getDefault().postSticky(pro);
+                // thêm vào trong sqlite
+              //  Quanlysanphamdaxem ql=new Quanlysanphamdaxem(pro.getId(),pro.getName(),pro.getImage(),pro.getDescribe(),pro.getIdProductType());
+               // Themgsanphamdaxem(ql);
+                startActivity(new Intent(LoadMoreActivity.this, ProductDetailActivity.class));
             }
         });
     }

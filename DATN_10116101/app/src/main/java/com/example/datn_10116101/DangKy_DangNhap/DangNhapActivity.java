@@ -86,7 +86,7 @@ public class DangNhapActivity extends BaseActivity implements View.OnClickListen
                 @Override
                 public void onChanged(ResponseUser1s responseUser1s) {
                     if (responseUser1s.getStatus().equals("SUCCESS")) { // check status trả về
-                        if (responseUser1s.getData().getEmail().equals("admin@admin.com")) {
+                        if (responseUser1s.getData().getPhone().equals("0971004685")) {
                             startActivity(new Intent(DangNhapActivity.this, AdminActivity.class));
                         } else {
                             user1s us = responseUser1s.getData();
