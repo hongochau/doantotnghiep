@@ -14,7 +14,7 @@ class LoginController extends Controller
         $user->phone=$request->input('phone');
         $user->account=$request->input('account');
         $us=User1s::where('account',$request->input('account'))->first();
-        $mail=User1s::where('email',$request->input('email'))->first();
+        $mail=User1s::where('phone',$request->input('phone'))->first();
 
         if($us!=null){
             return response()->json([

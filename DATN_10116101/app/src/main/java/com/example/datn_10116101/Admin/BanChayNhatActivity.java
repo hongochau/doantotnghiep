@@ -12,14 +12,15 @@ import com.example.datn_10116101.Activity.BaseActivity;
 import com.example.datn_10116101.Adapter.ProductAdapter;
 import com.example.datn_10116101.Admin.Adapter.BanchaynhatAdapter;
 import com.example.datn_10116101.Admin.viewModel.AdminViewModel;
-import com.example.datn_10116101.databinding.ActivitybanchayBinding;
+import com.example.datn_10116101.databinding.ActivityBanchayBinding;
 import com.example.datn_10116101.model.products;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BanChayNhatActivity extends BaseActivity implements BanchaynhatAdapter.OnClickItemBills {
-    ActivitybanchayBinding binding;
+   // ActivitybanchayBinding binding;
+    ActivityBanchayBinding binding;
     ArrayList<products> listproduct = new ArrayList<>();
     BanchaynhatAdapter adapter;
     AdminViewModel adminViewModel;
@@ -27,7 +28,7 @@ public class BanChayNhatActivity extends BaseActivity implements BanchaynhatAdap
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivitybanchayBinding.inflate(getLayoutInflater());
+        binding = ActivityBanchayBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         adminViewModel = new ViewModelProvider(this).get(AdminViewModel.class);
         initAdapter();
