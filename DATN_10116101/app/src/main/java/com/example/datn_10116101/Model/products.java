@@ -33,6 +33,9 @@ public class products {
     @Expose
     private Object updatedAt;
 
+    public products() {
+    }
+
     public Integer getId() {
         return id;
     }

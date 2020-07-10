@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Admin.ThongkeActivity"></activity>
+        <activity android:name=".Admin.ProductManagerActivity"></activity>
+        <activity android:name=".Admin.ThongkeActivity" />
         <activity android:name=".Admin.BanChayNhatActivity" />
         <activity android:name=".Admin.BillManagerActivity" />
         <activity android:name=".Admin.AdminActivity" />

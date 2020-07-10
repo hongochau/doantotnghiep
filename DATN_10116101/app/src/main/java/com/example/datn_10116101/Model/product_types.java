@@ -49,6 +49,11 @@ public class product_types {
         this.image = image;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
 
 
 }

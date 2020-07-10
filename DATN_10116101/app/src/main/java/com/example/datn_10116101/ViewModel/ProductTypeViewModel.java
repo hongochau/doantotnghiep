@@ -25,7 +25,9 @@ public class ProductTypeViewModel extends ViewModel {
         dataClient.getallloaisp().enqueue(new Callback<List<product_types>>() {
             @Override
             public void onResponse(Call<List<product_types>> call, Response<List<product_types>> response) {
-                newsData.setValue(response.body());
+                if(response.isSuccessful()){
+                    newsData.setValue(response.body());
+                }
             }
 
             @Override

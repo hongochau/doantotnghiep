@@ -35,5 +35,11 @@ public class AdminActivity extends AppCompatActivity {
                 startActivity(new Intent(AdminActivity.this, ThongkeActivity.class));
             }
         });
+        binding.button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminActivity.this,ProductManagerActivity.class));
+            }
+        });
     }
 }
